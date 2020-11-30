@@ -1,0 +1,158 @@
+[Wed May 13 19:03:54.802 2020] testapp initialized and configured
+[Wed May 13 19:03:54.806 2020] stack version: MLS_SDK_1_0_P_4
+[Wed May 13 19:03:54.837 2020] joining...
+[Wed May 13 19:04:00.269 2020] rxdone
+[Wed May 13 19:04:00.275 2020] joined
+[Wed May 13 19:04:10.270 2020] last sleep time: 9962 ms
+[Wed May 13 19:04:10.280 2020] uplink sent status: 8
+[Wed May 13 19:04:11.594 2020] rxtmo
+[Wed May 13 19:04:12.622 2020] rxdone
+[Wed May 13 19:04:12.626 2020] tx_ok
+[Wed May 13 19:04:20.274 2020] last sleep time: 7638 ms
+[Wed May 13 19:04:20.283 2020] uplink sent status: 8
+[Wed May 13 19:04:20.287 2020] tx_not_ok
+[Wed May 13 19:04:26.788 2020] last sleep time: 6496 ms
+[Wed May 13 19:04:30.275 2020] last sleep time: 3478 ms
+[Wed May 13 19:04:30.285 2020] uplink sent status: 8
+[Wed May 13 19:04:31.598 2020] rxtmo
+[Wed May 13 19:04:32.628 2020] rxdone
+[Wed May 13 19:04:32.632 2020] tx_ok
+[Wed May 13 19:04:40.278 2020] last sleep time: 7645 ms
+[Wed May 13 19:04:40.287 2020] uplink sent status: 8
+[Wed May 13 19:04:40.291 2020] tx_not_ok
+[Wed May 13 19:04:46.791 2020] last sleep time: 6496 ms
+[Wed May 13 19:04:50.279 2020] last sleep time: 3478 ms
+[Wed May 13 19:04:50.288 2020] uplink sent status: 8
+[Wed May 13 19:04:51.601 2020] rxtmo
+[Wed May 13 19:04:52.633 2020] rxdone
+[Wed May 13 19:04:52.633 2020] tx_ok
+[Wed May 13 19:05:00.283 2020] last sleep time: 7638 ms
+[Wed May 13 19:05:00.293 2020] uplink sent status: 8
+[Wed May 13 19:05:00.293 2020] tx_not_ok
+[Wed May 13 19:05:06.794 2020] last sleep time: 6496 ms
+[Wed May 13 19:05:10.282 2020] last sleep time: 3478 ms
+[Wed May 13 19:05:10.293 2020] uplink sent status: 8
+[Wed May 13 19:05:11.604 2020] rxtmo
+[Wed May 13 19:05:12.633 2020] rxdone
+[Wed May 13 19:05:12.633 2020] tx_ok
+[Wed May 13 19:05:20.285 2020] last sleep time: 7645 ms
+[Wed May 13 19:05:20.295 2020] uplink sent status: 8
+[Wed May 13 19:05:20.295 2020] tx_not_ok
+[Wed May 13 19:05:26.798 2020] last sleep time: 6496 ms
+[Wed May 13 19:05:30.288 2020] last sleep time: 3478 ms
+[Wed May 13 19:05:30.294 2020] uplink sent status: 8
+[Wed May 13 19:05:31.608 2020] rxtmo
+[Wed May 13 19:05:32.531 2020] rxtmo
+[Wed May 13 19:05:32.531 2020] tx_ok
+[Wed May 13 19:05:40.288 2020] last sleep time: 7755 ms
+[Wed May 13 19:05:40.297 2020] uplink sent status: 8
+[Wed May 13 19:05:40.300 2020] tx_not_ok
+[Wed May 13 19:05:46.800 2020] last sleep time: 6496 ms
+[Wed May 13 19:05:50.289 2020] last sleep time: 3478 ms
+[Wed May 13 19:05:50.298 2020] uplink sent status: 8
+[Wed May 13 19:05:51.614 2020] rxtmo
+[Wed May 13 19:05:52.531 2020] rxtmo
+[Wed May 13 19:05:52.534 2020] tx_ok
+[Wed May 13 19:06:00.292 2020] last sleep time: 7755 ms
+[Wed May 13 19:06:00.300 2020] uplink sent status: 8
+[Wed May 13 19:06:00.304 2020] tx_not_ok
+[Wed May 13 19:06:06.804 2020] last sleep time: 6496 ms
+[Wed May 13 19:06:10.295 2020] last sleep time: 3478 ms
+[Wed May 13 19:06:10.302 2020] uplink sent status: 8
+[Wed May 13 19:06:11.615 2020] rxtmo
+[Wed May 13 19:06:12.534 2020] rxtmo
+[Wed May 13 19:06:12.538 2020] tx_ok
+[Wed May 13 19:06:20.295 2020] last sleep time: 7755 ms
+[Wed May 13 19:06:20.303 2020] uplink sent status: 8
+[Wed May 13 19:06:20.309 2020] tx_not_ok
+[Wed May 13 19:06:26.804 2020] last sleep time: 6496 ms
+[Wed May 13 19:06:30.296 2020] last sleep time: 3478 ms
+[Wed May 13 19:06:30.306 2020] uplink sent status: 8
+[Wed May 13 19:06:31.619 2020] rxtmo
+[Wed May 13 19:06:32.539 2020] rxtmo
+[Wed May 13 19:06:32.539 2020] tx_ok
+[Wed May 13 19:06:40.298 2020] last sleep time: 7755 ms
+[Wed May 13 19:06:40.306 2020] uplink sent status: 8
+[Wed May 13 19:06:40.310 2020] tx_not_ok
+[Wed May 13 19:06:46.810 2020] last sleep time: 6496 ms
+[Wed May 13 19:06:50.301 2020] last sleep time: 3478 ms
+[Wed May 13 19:06:50.309 2020] uplink sent status: 8
+[Wed May 13 19:06:51.620 2020] rxtmo
+[Wed May 13 19:06:52.543 2020] rxtmo
+[Wed May 13 19:06:52.543 2020] tx_ok
+[Wed May 13 19:07:00.302 2020] last sleep time: 7755 ms
+[Wed May 13 19:07:00.310 2020] uplink sent status: 8
+[Wed May 13 19:07:00.313 2020] tx_not_ok
+[Wed May 13 19:07:06.816 2020] last sleep time: 6496 ms
+[Wed May 13 19:07:10.303 2020] last sleep time: 3478 ms
+[Wed May 13 19:07:10.314 2020] uplink sent status: 8
+[Wed May 13 19:07:11.627 2020] rxtmo
+[Wed May 13 19:07:12.547 2020] rxtmo
+[Wed May 13 19:07:12.547 2020] tx_ok
+[Wed May 13 19:07:20.305 2020] last sleep time: 7755 ms
+[Wed May 13 19:07:20.314 2020] uplink sent status: 8
+[Wed May 13 19:07:20.318 2020] tx_not_ok
+[Wed May 13 19:07:26.818 2020] last sleep time: 6496 ms
+[Wed May 13 19:07:30.308 2020] last sleep time: 3478 ms
+[Wed May 13 19:07:30.314 2020] uplink sent status: 8
+[Wed May 13 19:07:31.629 2020] rxtmo
+[Wed May 13 19:07:32.548 2020] rxtmo
+[Wed May 13 19:07:32.554 2020] tx_ok
+[Wed May 13 19:07:40.311 2020] last sleep time: 7755 ms
+[Wed May 13 19:07:40.317 2020] uplink sent status: 8
+[Wed May 13 19:07:40.321 2020] tx_not_ok
+[Wed May 13 19:07:46.821 2020] last sleep time: 6496 ms
+[Wed May 13 19:07:50.313 2020] last sleep time: 3478 ms
+[Wed May 13 19:07:50.319 2020] uplink sent status: 8
+[Wed May 13 19:07:51.636 2020] rxtmo
+[Wed May 13 19:07:52.552 2020] rxtmo
+[Wed May 13 19:07:52.555 2020] tx_ok
+[Wed May 13 19:08:00.312 2020] last sleep time: 7755 ms
+[Wed May 13 19:08:00.327 2020] uplink sent status: 8
+[Wed May 13 19:08:00.327 2020] tx_not_ok
+[Wed May 13 19:08:06.826 2020] last sleep time: 6496 ms
+[Wed May 13 19:08:10.314 2020] last sleep time: 3478 ms
+[Wed May 13 19:08:10.321 2020] uplink sent status: 8
+[Wed May 13 19:08:11.639 2020] rxtmo
+[Wed May 13 19:08:12.559 2020] rxtmo
+[Wed May 13 19:08:12.559 2020] tx_ok
+[Wed May 13 19:08:20.316 2020] last sleep time: 7755 ms
+[Wed May 13 19:08:20.324 2020] uplink sent status: 8
+[Wed May 13 19:08:20.330 2020] tx_not_ok
+[Wed May 13 19:08:26.828 2020] last sleep time: 6496 ms
+[Wed May 13 19:08:30.322 2020] last sleep time: 3478 ms
+[Wed May 13 19:08:30.327 2020] uplink sent status: 8
+[Wed May 13 19:08:31.641 2020] rxtmo
+[Wed May 13 19:08:32.559 2020] rxtmo
+[Wed May 13 19:08:32.563 2020] tx_ok
+[Wed May 13 19:08:40.327 2020] last sleep time: 7755 ms
+[Wed May 13 19:08:40.330 2020] uplink sent status: 8
+[Wed May 13 19:08:40.330 2020] tx_not_ok
+[Wed May 13 19:08:46.832 2020] last sleep time: 6496 ms
+[Wed May 13 19:08:50.321 2020] last sleep time: 3478 ms
+[Wed May 13 19:08:50.329 2020] uplink sent status: 8
+[Wed May 13 19:08:51.642 2020] rxtmo
+[Wed May 13 19:08:52.671 2020] rxdone
+[Wed May 13 19:08:52.676 2020] tx_ok
+[Wed May 13 19:09:00.324 2020] last sleep time: 7638 ms
+[Wed May 13 19:09:00.332 2020] uplink sent status: 8
+[Wed May 13 19:09:00.334 2020] tx_not_ok
+[Wed May 13 19:09:06.835 2020] last sleep time: 6496 ms
+[Wed May 13 19:09:10.327 2020] last sleep time: 3478 ms
+[Wed May 13 19:09:10.332 2020] uplink sent status: 8
+[Wed May 13 19:09:11.652 2020] rxtmo
+[Wed May 13 19:09:12.678 2020] rxdone
+[Wed May 13 19:09:12.678 2020] tx_ok
+[Wed May 13 19:09:20.328 2020] last sleep time: 7645 ms
+[Wed May 13 19:09:20.338 2020] uplink sent status: 8
+[Wed May 13 19:09:20.338 2020] tx_not_ok
+[Wed May 13 19:09:26.839 2020] last sleep time: 6496 ms
+[Wed May 13 19:09:30.329 2020] last sleep time: 3478 ms
+[Wed May 13 19:09:30.337 2020] uplink sent status: 8
+[Wed May 13 19:09:31.650 2020] rxtmo
+[Wed May 13 19:09:32.683 2020] rxdone
+[Wed May 13 19:09:32.683 2020] tx_ok
+[Wed May 13 19:09:40.329 2020] last sleep time: 7638 ms
+[Wed May 13 19:09:40.339 2020] uplink sent status: 8
+[Wed May 13 19:09:40.344 2020] tx_not_ok
+[Wed May 13 19:09:47.147 2020] last sleep time: 6496 ms

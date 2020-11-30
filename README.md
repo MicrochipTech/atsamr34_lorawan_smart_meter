@@ -9,12 +9,28 @@
 </p>
 </a>
 
+## ⚠ Disclaimer
+
+<p><span style="color:red"><b>
+Subject to your compliance with these terms, you may use Microchip software and any derivatives exclusively with Microchip products. It is your responsibility to comply with third party license terms applicable to your use of third party software (including open source software) that may accompany Microchip software.<br>
+THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.<br>
+IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THE FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+</span></p></b>
+
+> Interact with your peers about this software in [LoRa Forum](https://www.microchip.com/forums/f512.aspx).
+
+## Abstract
+
 **Based on LoRaWAN Application generated from ASFv3, this sample code demonstrates how to enable a power-efficient pulse counting while device is placed in standby mode, useful for battery-powered applications used in Smart Metering**
 
 The main application consists into transmitting the counter value to a LoRaWAN network provider cloud thru a Gateway.
 For the purpose of this demo, TTN and TTI with a pre-provisioned Secure Element have been used.
 
-</br>
+## Sample Applications
+
+[Clone/Download](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the current repo to get the software.
+
+## A la carte
 
 1. [Material required](#step1)
 2. [Software](#step2)
@@ -29,7 +45,17 @@ For the purpose of this demo, TTN and TTI with a pre-provisioned Secure Element 
 Must:
 Purchase the <a href="https://www.microchip.com/Developmenttools/ProductDetails/DM320111" target="_blank">SAM R34 Xplained Pro Evaluation Kit</a>
 </br>
-![](Doc/ATSAMR34Xpro.png)
+<p align="center">
+<img src="Doc/ATSAMR34Xpro.png" width=>
+</p>
+
+</br>
+
+Purchase the <a href="https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/EV23M25A" target="_blank">WLR089U0 Xplained Pro Evaluation Kit</a>
+</br>
+<p align="center">
+<img src="Doc/WLR089U0Xpro.png" width=>
+</p>
 </br>
 
 Must:
@@ -46,27 +72,12 @@ and the <a href="https://www.microchipdirect.com/product/search/all/AT88CKSCKTUD
 
 ## Software <a name="step2"></a>
 
-- Download and install Atmel Studio 7.0 IDE. </br>
-https://www.microchip.com/mplab/avr-support/atmel-studio-7
+- Download and install [Microchip Studio 7.0 IDE](https://www.microchip.com/mplab/microchip-studio).
+- Open Microchip Studio 7.0 IDE.
+- From **Tools - > Extensions and updates**, install Advanced Software Framework (ASFv3) v3.49.1 release or upper release.
+- Restart Microchip Studio
 
-- Open Atmel Studio 7.0 IDE. </br>
-- Then, you need Advanced Software Framework (ASFv3) v3.47.0 release or upper release. </br>
-Install ASFv3 as an extension to Atmel Studio from the menu: Tools -> Extensions and Updates …
-- Once the installation is complete, you must restart Atmel Studio. </br>
-- Download and install a serial terminal program like Tera Term. </br>
-https://osdn.net/projects/ttssh2/releases/
-
-Note: ASFv3 is an MCU software library providing a large collection of embedded software for AVR® and SAM flash MCUs and Wireless devices. ASFv3 is configured by the ASF Wizard in Atmel Studio 7.0 (installed as an extension to Studio). ASFv3 is also available as a standalone (.zip) with the same content as Studio extension (https://www.microchip.com/mplab/avr-support/advanced-software-framework).
-
-Important:
-Until the next Atmel Studio IDE release, you have to manually install the Device Part Pack for developing with SAMR34/R35 on Atmel Studio 7.0 IDE.
-(all products released in between IDE releases of Atmel Studio should be manually added by user to develop applications).
-- Go to Tools -> Device Pack Manager </br>
-- Check for Updates </br>
-- Search for SAMR34 and click install </br>
-- Repeat the same for SAMR35 </br>
-- Restart Atmel Studio 7.0 IDE </br>
-
+- Download and install a serial terminal program like [Tera Term](https://osdn.net/projects/ttssh2/releases/).
 
 ## Hardware setup <a name="step3"></a>
 
@@ -75,10 +86,22 @@ To extract the SAM R34 current consumption, the board requires to be configured 
 - I/O Jumper: BYPASS
 - Vbat Jumper: PB03/VCC
 
-![](Doc/setup.png)
+<p align="center">
+<img src="Doc/setup.png" width=520>
+</p>
 
 
-In case you are using TTI servers and a ATECC608A-TNGLORA secure element, refer to <a href="https://github.com/MicrochipTech/atsamr34_ecc608a_tti#step3" target="_blank">this repo for the setup.</a>
+> In case you are using TTI servers and a ATECC608A-TNGLORA secure element, refer to <a href="https://github.com/MicrochipTech/atsamr34_ecc608a_tti#step3" target="_blank">this repo for the setup.</a>
+
+> WLR089 Xplained Pro requires hardware modification to use the application code. 
+By default inductor L301 (10uH) and capacitor C316 (100nF) are not mounted on the WLR089 Xplained Pro. Both need to be mounted to use the demo application and select Buck converter as the main voltage regulator in active mode.\
+Check out the [WLR089 Xplained Pro documentation](https://www.microchip.com/Developmenttools/ProductDetails/EV23M25A) for more details.
+
+<p align="center">
+<img src="Doc/WLR089Xpro_modification_01.png" width=720>
+<img src="Doc/WLR089Xpro_modification_02.png" width=720>
+<img src="Doc/setup_wlr089.png" width=520>
+</p>
 
 ## Sleep Modes <a name="step4"></a>
 
@@ -122,12 +145,15 @@ To use PMM in an application, it is required to include the following header fil
 #endif
 ```
 
-By default, application sleep time is configured for 30 second and can be changed to the desired values. Application sleep request time is configured by the macro:
+By default, application sleep time is configured for 30 seconds and can be changed to the desired values. Application sleep request time is configured by the macro:
 ```
 #define DEMO_CONF_DEFAULT_APP_SLEEP_TIME_MS     30000	// Sleep duration in ms
 ```
 But the sleep duration must fall within the acceptable range which is givin in the following table.
-![](Doc/pmm_table.png)
+
+<p align="center">
+<img src="Doc/pmm_table.png" width=720>
+</p>
 
 The sleep timer module must be initialized for enabling the RTC module: 
 ```
@@ -218,12 +244,17 @@ The Event System is comprised of the following two event resources:
 - Event Users: connected to peripherals that will receive events as they are generated
 
 In the current application, the Event System has been configured as below.
-![](Doc/event_system.png)
+
+<p align="center">
+<img src="Doc/event_system.png" width=720>
+</p>
 
 This application aims to count the pulses coming from a pulse source and to transmit over the LoRaWAN RF protocol.
 </br>
 
-![](Doc/block_diagram.png)
+<p align="center">
+<img src="Doc/block_diagram.png" width=720>
+</p>
 
 The EXTINT8 module (physically connected to user button present on the board) is configured to generate an event when button SW0 is pushed.
 SW0 is connected to PA28, which can generate interrupts on EXTINT[8]. 
@@ -339,25 +370,40 @@ From the top menu, go to Project -> <Project Name> Properties</br>
 
 In case a Secure Element is connected to SAM R34 Xplained Pro board, make sure the MACRO `CRYPTO_DEV_ENABLED` is defined.
 Select Toolchain > ARM/GNU C Compiler > Symbols
-![](Doc/crypto_symbol.png)
+
+<p align="center">
+<img src="Doc/crypto_symbol.png" width=720>
+</p>
 
 From Tool settings, select your board as EDBG debugger with SWD interface
 </br>
-![](Doc/EDBG.png)
+<p align="center">
+<img src="Doc/EDBG.png" width=520>
+</p>
 </br></br>
 Build and download the project by clicking the empty green "Run without debugging" triangle
 </br></br>
-![](Doc/AtmelStudio.png)
+<p align="center">
+<img src="Doc/AtmelStudio.png" width=520>
+</p>
 </br>
 
 From the top menu, open Tools > Data Visualizer
-![](Doc/tools_menu.png)
+<p align="center">
+<img src="Doc/tools_menu.png" width=>
+</p>
 
-Under DGI Control Panel, select SAMR34 Xplained Pro
-Click Connect
-![](Doc/data_visualizer_01.png)
+Under DGI Control Panel, select SAMR34 Xplained Pro and Click Connect
+<p align="center">
+<img src="Doc/data_visualizer_01.png" width=720>
+</p>
+
 When it is ready, select "Power" interface and click Start to start power analyze on the board.
-![](Doc/data_visualizer_02.png)
+
+<p align="center">
+<img src="Doc/data_visualizer_02.png" width=720>
+</p>
+
 The Data Visualizer should display the power consumption of the SAM R34 device and make abstraction of the I/O and external onboard chip consumption.
 </br>
 </br>
@@ -367,29 +413,45 @@ Open Tera Term UART console configured at 115200 bps, 8-data bits/No parity/1-st
 Press the "Reset" button on the SAM R34 Xplained Pro board to see output printed to the console
 </br>
 If the MACRO `CRYPTO_DEV_ENABLED` is defined and a secure element is connected to SAM R34 Xplained Pro over EXT3 connector:
-![](Doc/tera_term_01.png)
+<p align="center">
+<img src="Doc/tera_term_01.png" width=480>
+</p>
 
 If the MACRO `CRYPTO_DEV_ENABLED` is not defined, the OTAA credentials hard-coded in `lorawan_app.c` are used:
-![](Doc/tera_term_02.png)
+<p align="center">
+<img src="Doc/tera_term_02.png" width=480>
+</p>
 
 When device successfully joined the LoRaWAN network, the application will periodically wakes-up every 60 sec and transmit an uplink message over the LoRaWAN network.
 The message encapsulates the counter value and the temperature in °C and in °F.
 
-![](Doc/tera_term_03.png)
+<p align="center">
+<img src="Doc/tera_term_03.png" width=480>
+</p>
 
 In active mode, on every wake up, the device will issue a transmission followed by two reception windows.
-![](Doc/active_mode.png)
+<p align="center">
+<img src="Doc/active_mode.png" width=480>
+</p>
 
 Between two transmission, the power consumption in standby mode is around 8uA
-![](Doc/between_two_uplink.png)
+<p align="center">
+<img src="Doc/between_two_uplink.png" width=720>
+</p>
 
 In standby mode, pulse counting is possible without waking up the CPU.
-![](Doc/pulse_counter.png)
+<p align="center">
+<img src="Doc/pulse_counter.png" width=720>
+</p>
 
 Comparing to SAM R34 datasheet, the additional uA current is due to the fact the RF switch is always powered ON in the current Xplained Pro Board design.
 
+> With WLR089U0 Xplained Pro board, the RF switch is controlled by the application and with that improvement the current consumption measured is much lower.
+
 The result can be observed on the LoRaWAN network server console as well.
-![](Doc/ttn_application_data.png)
+<p align="center">
+<img src="Doc/ttn_application_data.png" width=640>
+</p>
 
 For a Class A device; which is sleeping most of the time; it is important to take into consideration the amount of power when the device is not performing a radio transaction.
 Using PMM with a longer sleep time parameter is a good practice to reduce the number of wake up events and reduce the overall power consumption.
@@ -399,4 +461,8 @@ Other factors to consider when you want to optimize the overall power consumptio
 - Payload size must be small
 - Preferred to transmit Unconfirmed message
 
+> If Duty Cycle is enabled (e.g. if EU868 band is used), the duty-cycle timer is interrupting the sleep and giving unexpected wakeups.
 
+<p align="center">
+<img src="Doc/tera_term_04.png" width=640>
+</p>

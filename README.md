@@ -1,4 +1,6 @@
 # ATSAMR34_LORAWAN_SMART_METER
+<img src="Doc/IoT-Made-Easy-Logo.png" width=100>
+
 > “Wireless Made Easy!" - Enable pulse counting on a Low Power LoRaWAN Application
 
 <p>
@@ -365,7 +367,7 @@ Both are able to count during standby mode.
 
 ## Run the demo <a name="step7"></a>
 
-Open the current project with Atmel Studio 7 IDE</br>
+Open the current project with Microchip Studio 7 IDE</br>
 From the top menu, go to Project -> <Project Name> Properties</br>
 
 In case a Secure Element is connected to SAM R34 Xplained Pro board, make sure the MACRO `CRYPTO_DEV_ENABLED` is defined.
